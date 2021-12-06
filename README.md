@@ -10,7 +10,7 @@ All code runs under Chez Scheme:
 https://cisco.github.io/ChezScheme/
 
 
-The code I write during the keynote can be found in `transcript.scm`.  I first load `simple.scm` into Chez Scheme in order to load miniKanren and `evalo`.
+The code I write during the keynote can be found in `transcript.scm`.  I first load `simple.scm` into Chez Scheme in order to load miniKanren and `evalo`.  The Quine relay code can be found in `quine-relay.scm`.
 
 
 The `faster-miniKanren` code is from https://github.com/michaelballantyne/faster-minikanren; the file `faster-miniKanren/q.scm` is a slightly modified version of the original `faster-minikanren/test-quines.scm` file (https://github.com/michaelballantyne/faster-minikanren/blob/master/test-quines.scm)
