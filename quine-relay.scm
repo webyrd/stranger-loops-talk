@@ -1080,29 +1080,8 @@
     (absento le qe)
     (eval-quasi qe le)
     (eval-listo le qe))
-  '(((`(,'(lambda (_.0)
-            (list
-             'quasiquote
-             (list _.0 'unquote (list 'quote (list (list 'quote _.0))))))
-        .
-        ,'(','(lambda (_.0)
-                (list
-                 'quasiquote
-                 (list
-                  _.0
-                  'unquote
-                  (list 'quote (list (list 'quote _.0))))))))
-      ((lambda (_.0)
-         (list
-          'quasiquote
-          (list _.0 'unquote (list 'quote (list (list 'quote _.0))))))
-       ','(lambda (_.0)
-            (list
-             'quasiquote
-             (list
-              _.0
-              'unquote
-              (list 'quote (list (list 'quote _.0))))))))
+  '((((quasiquote (list unquote (quote ((quote quasiquote) ((lambda (_.0) (list (quote list) (quote unquote) (list (quote quote) (list (quote (quote quasiquote)) (list _.0 (list (quote quote) _.0)))))) (quote (lambda (_.0) (list (quote list) (quote unquote) (list (quote quote) (list (quote (quote quasiquote)) (list _.0 (list (quote quote) _.0))))))))))))
+      (list (quote quasiquote) ((lambda (_.0) (list (quote list) (quote unquote) (list (quote quote) (list (quote (quote quasiquote)) (list _.0 (list (quote quote) _.0)))))) (quote (lambda (_.0) (list (quote list) (quote unquote) (list (quote quote) (list (quote (quote quasiquote)) (list _.0 (list (quote quote) _.0))))))))))
      (=/= ((_.0 closure)))
      (sym _.0))))
 
@@ -1114,15 +1093,9 @@
     (absento le qe)
     (eval-listo le qe)
     (eval-quasi qe le))
-  '(((((lambda (_.0)
-         `(list ,_.0 (quote (quote ,_.0 . ,'()) . ,'()) . ,'()))
-       ''(lambda (_.0)
-           `(list ,_.0 (quote (quote ,_.0 . ,'()) . ,'()) . ,'())))
-      (list
-       '(lambda (_.0)
-          `(list ,_.0 (quote (quote ,_.0 . ,'()) . ,'()) . ,'()))
-       '''(lambda (_.0)
-            `(list ,_.0 (quote (quote ,_.0 . ,'()) . ,'()) . ,'()))))
+  '(((((lambda (_.0) (quasiquote (list (unquote _.0) (quote (quote (unquote _.0))))))
+       (quote (quote (lambda (_.0) (quasiquote (list (unquote _.0) (quote (quote (unquote _.0)))))))))
+      (list (quote (lambda (_.0) (quasiquote (list (unquote _.0) (quote (quote (unquote _.0))))))) (quote (quote (quote (lambda (_.0) (quasiquote (list (unquote _.0) (quote (quote (unquote _.0)))))))))))
      (=/= ((_.0 closure)))
      (sym _.0))))
 
